@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home </title>
+
+<link rel="stylesheet" href="index.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+
+  body{
+    background-image: url(img/landscape4.jpg);
+    background-repeat: none;
+    background-size: cover;
+  }
+  table{
+    border: 2px solid black;
+    background-image: url(img/Sky1.jpg);
+    background-size: cover;
+  }
+
+
+
+</style>
+
+</head>
+  
+
+<body style="font-family: 'Sanchez';">
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Abhijeet Chowdhury</a>
+      <a class="navbar-brand" rel="home" href="#" title="#">
+        <img style="width:40px; max-height: 35px; margin-top: -7px;"
+             src="img/logo.jpg">
+    </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery2.html">Gallery </a> </li>
+        <li><a href="about.html">About Me</a></li>
+        <li  class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Contact Me</h1>
+  </div>
+</div>
+
+
+  <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<center>
+<table style="width:100%;max-width:550px;border:3;" cellpadding="68" cellspacing="0">
+<tr> <td>
+<label for="Name">Name*:</label>
+</td> <td>
+<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="PhoneNumber">Phone number:</label>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="FromEmailAddress">Email address*:</label>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="Comments">Comments*:</label>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+</td> </tr> <tr> <td>
+* - required fields
+</td> <td>
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="https://www.100forms.com/js/FORMKEY:DPXRGS2L9XNN/SEND:abhijeetc29@gmail.com" type="text/javascript"></script>
+</td> </tr>
+</table> </center>
+</form>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gallery 2 </title>
+
+<link rel="stylesheet" href="index.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="gallery2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+ 
+ <script>
+
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+
+
+ </script>
+
+</head>
+<body style="font-family: 'Sanchez';">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Abhijeet Chowdhury</a>
+      <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+        <img style="width:40px; max-height: 35px; margin-top: -7px;"
+             src="img/logo.jpg">
+    </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="gallery2.html">Gallery </a> </li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+
+
+
+ <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1> 
+        </div> 
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="architecture">Architecture</button>
+            <button class="btn btn-default filter-button" data-filter="landscape">Landscapes</button>
+            <button class="btn btn-default filter-button" data-filter="aesthetic">Aesthetic</button>
+            <button class="btn btn-default filter-button" data-filter="sky">Sky</button>
+            <button class="btn btn-default filter-button" data-filter="portrait">Portrait</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-12 col-md-12 col-sm-12 col-xs-12 filter architecture">
+                <img src="img/Architecture1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter landscape">
+                <img src="img/Landscape1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter aesthetic">
+                <img src="img/Aesthetic1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-12 col-md-12 col-sm-6 col-xs-6 filter sky">
+                <img src="img/Sky1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter portrait">
+                <img src="img/Portrait1.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter architecture">
+                <img src="img/Architecture2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter landscape">
+                <img src="img/Landscape2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter aesthetic">
+                <img src="img/Aesthetic2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter sky">
+                <img src="img/Sky2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter portrait">
+                <img src="img/Portrait2.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter architecture">
+                <img src="img/Architecture3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter landscape">
+                <img src="img/Landscape3.jpg" class="img-responsive">
+            </div>
+
+            <!--<div class="gallery_product col-lg-12 col-md-12 col-sm-6 col-xs-6 filter aesthetic">
+                <img src="img/Aesthetic3.jpg" class="img-responsive">
+            </div> -->
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter sky">
+                <img src="img/Sky3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter portrait">
+                <img src="img/Portrait3.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter architecture">
+                <img src="img/Architecture4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter landscape">
+                <img src="img/Landscape4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter aesthetic">
+                <img src="img/Aesthetic4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter sky">
+                <img src="img/Sky4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter portrait">
+                <img src="img/Portrait4.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter architecture">
+                <img src="img/Architecture5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter landscape">
+                <img src="img/Landscape5.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter aesthetic">
+                <img src="img/Aesthetic5.jpg" class="img-responsive">
+            </div>
+
+            <!--<div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter sky">
+                <img src="img/Sky5.jpg" class="img-responsive">
+            </div>-->
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter portrait">
+                <img src="img/Portrait5.jpg" class="img-responsive">
+            </div>
+
+            <!--<div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter architecture">
+                <img src="img/Architecture6.jpg" class="img-responsive">
+            </div>-->
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter landscape">
+                <img src="img/Landscape6.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter aesthetic">
+                <img src="img/Aesthetic6.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter landscape">
+                <img src="img/Landscape7.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-12 col-xs-12 filter portrait">
+                <img src="img/Portrait7.jpg" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter aesthetic">
+                <img src="img/Aesthetic7.jpg" class="img-responsive">
+            </div>
+
+            <!--<div class="gallery_product col-lg-12 col-md-12 col-sm-6 col-xs-6 filter portrait">
+                <img src="img/Portrait8.jpg" class="img-responsive">
+            </div>-->
+        </div>
+    </div>
+</section>
